@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Egypt</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@350&display=swap" rel="stylesheet">
+  <style>
+
+   body {
+     font-family: 'Benne', serif;
+     font-size:15px;
+     background-color: #F6E0C3;
+}
+   .left-side {
+    margin-left: 50px;
+    float:left;
+    text-align: left;
+}
+   .right-side {
+    margin-left:950px;
+    margin-right: 130px;
+    padding-bottom:300px;
+    padding-top:75px;
+}
+  .egypt-container {
+    border-radius:25px;
+    border-style:double;
+    border-width: 5px;
+    border-color: #732210;
+}
+  .headers {
+   margin-left: 50px;
+   margin-top:auto;
+   margin-bottom: auto;
+}
+   h1 {
+    font-family: 'Playfair Display', serif;
+    text-indent: 3em;
+    font-color:#2B1A14;
+}
+   h2 {
+    font-family: 'Playfair Display', serif;
+
+}
+   p {
+     font-family: 'Newsreader', serif;
+     font-size:20px;
+     line-height: 30px;
+}
+  </style>
+<!-- Use floats or flex, adjust font to look better as well -->
+ </head>
+
+ <body>
+
+  <!-- containers begin -->
+
+  <div class="egypt-container">
+   <p class="double">
+   <div class="left-side">
+    <h1>
+      <u>King Tut May Have Been Killed By A Hippopotamus</u>
+    </h1>
+  <!-- the orange code or 'src' or 'alt' etc are attributes -->
+    <img src="img/kingtut-landscape.jpg" alt="King Tut">
+   </div>
+
+  <div class="right-side">
+    <p>
+     Surprisingly little is known about the life of the boy pharaoh Tutankhamen,
+    but some historians believe they know how he died. Scans of the young king’s body show that he was embalmed without his heart or his chest wall. This drastic departure from traditional Egyptian burial practice suggests that he may have suffered a horrific injury prior to his death. According to a handful of Egyptologists, one of the most likely causes for this wound would have been a bite from a hippopotamus. Evidence indicates that the Egyptians hunted the beasts for sport, and statues found in King Tut’s tomb even depict him in the act of throwing a harpoon. If the boy pharaoh was indeed fond of stalking dangerous game, then  his death might have been the result of a hunt gone wrong.
+    </p>
+  </div>
+    <br>
+    <br>
+    <br>
+    <!---Headers begin here-->
+   <div class="headers">
+     <h1>
+       <u>Headings</u>
+       </h1>
+     <h2>Header 2</h2>
+     <h3>Header 3</h3>
+     <h4>Header 4</h4>
+     <h5>Header 5</h5>
+     <h6>Header 6</h6>
+
+    </div>
+    </p>
+
+ </div>
+ <!-- <div id="theSquare" class="is-a-class"></div> -->
+ <!-- This is a CDN of jQuery from Google-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+ <script>
+ // JS means JavaScript
+ // slash slash space is how to comment in javascript
+// This is some javascript code doing an alert
+// alert('Good Morning :^)');
+
+// $ means we are using jQuery here :^)
+// only use one type of apostrophes
+
+// jQuery methods
+// setTimeout(function(){
+// $('img').hide(1000);
+// }, 5000);
+
+// $('img').show(3000);
+// $('.right-side').fadeOut(2000);
+// $('.right-side').fadeIn(2000);
+// $('.headers').hide(5000);
+// $('.headers').show(3000);
+
+// this is an event listener for hovering over an element
+$('.right-side').mouseover(function(){
+$('.right-side').fadeOut(2000);
+$('.right-side').fadeIn(2000);
+// alert('Do not steal my work');
+});
+// this is an event listener for double clicking and making an element disappear
+$(document).ready(function(){
+  $("p").dblclick(function(){
+    $(this).hide();
+  });
+});
+
+ </script>
+ </body>
+</html>
